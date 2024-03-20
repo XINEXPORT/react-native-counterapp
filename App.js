@@ -15,18 +15,18 @@ const App = () => {
 		setCounter(initialCount); 
 	}; 
 
-	const handleClick1 = () => { 
+	const handleIncrement = () => { 
 		setCounter(counter + 1); 
 	}; 
 
-	const handleClick2 = () => { 
+	const handleDecrement = () => { 
 		setCounter(counter - 1); 
 	}; 
 
 	return ( 
 		<View style={styles.container}> 
 			<Text style={styles.heading}> 
-				Geeksforgeeks 
+				My Counter App 
 			</Text> 
 			<Text style={styles.header}> 
 				Counter App 
@@ -36,11 +36,11 @@ const App = () => {
 			</Text> 
 			<View style={styles.buttons}> 
 				<TouchableOpacity style={styles.button} 
-								onPress={handleClick1}> 
+								onPress={handleIncrement}> 
 					<Text>Increment</Text> 
 				</TouchableOpacity> 
 				<TouchableOpacity style={styles.button} 
-								onPress={handleClick2}> 
+								onPress={handleDecrement}> 
 					<Text>Decrement</Text> 
 				</TouchableOpacity> 
 			</View> 
